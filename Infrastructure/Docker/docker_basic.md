@@ -66,3 +66,20 @@ $ sudo docker exec -it {Container ID} bash
 ```
 $ sudo docker stop {Container ID}
 ```
+<br>
+
+------------------------------------------
+
+<br>
+
+## **RUNNING DOCKER WITHOUT SUDO**
+### Create a Unix group called docker:
+```
+$ sudo groupadd docker
+```
+
+### Add the User to docker group:
+```
+$ sudo usermod -aG docker {Username}
+$ su - {Username}
+```
